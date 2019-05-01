@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Test site</title>
+<meta charset="UTF-8">
+<!--Internal CSS (Cascading Style Sheets)
+<style>
+body {background-color: ghostwhite;}
+h1   {
+color: blue;
+font-family: verdana;
+font-size: 300%;
+border: 1px solid green;
+padding: 30px;
+margin: 50px;
+}
+p    {color: black;}
+</style>
+-->
+<!--External CSS
+<link rel="stylesheet" href="styles.css">-->
+<!--colors: https://www.w3schools.com/colors/colors_names.asp -->
+<style>
+img {
+width: 20%;
+margin: 10px;
+}
+.buttons {
+background:#ffff00;
+font-weight: bold;
+color: black;
+padding: 11px;
+margin: -27px auto auto auto;
+}
+span.note {
+font-size: 120%;
+color: red;
+}
+</style>
+</head>
+
+<body style="background-color:ghostwhite;">
+
+<h1 style="padding:5px;text-align:center;background-color:MediumSeaGreen">This is header of my test site</h1>
+<div style="text-align:right;"><form action="/action_page.php" target="_self" method="post">
+<fieldset><legend>Personal information:</legend>
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname"><br>
+  <input type="radio" name="gender" value="male" > Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other" checked> Other
+  <br>
+  <select name="race" size="1">
+  <option value="caucasoid">Caucasoid</option>
+ <option value="mongoloid" selected>Mongoloid</option>
+ <option value="negroid">Negroid</option> 
+  </select><br><br>
+ <select name="Preffered phones" size="4" multiple>
+ <option value="samsung">Samsung</option>
+ <option value="huawei" selected>Huawei/Honor</option>
+ <option value="iphone">iPhone</option>
+ <option value="oneplus">Oneplus</option>
+ <option value="xiaomi">Xiaomi</option>
+ <option value="meizu">Meizu</option>
+ <option value="lenovo">Lenovo</option>
+ <option value="other">other</option>
+  </select>
+   <br><br><textarea name="message" rows="6" cols="40">Add additional information.</textarea><br>
+  <input type="submit" value="Submit"><input type="reset">
+  <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+</fieldset></form></div>
+<!--
+<h1 style="font-size:40px;">This is the 2<sub><small>nd</small></sub> header with font size 40<sup>px</sup></h2>
+<h2>This is the 3rd header</h3>
+<h3 style="font-size:20px;">This is the 4th header with font size 20 px</h4>
+<h4 style="color:magenta;">This is the 5th header</h5>
+<h5 style="color:yellow;">This is the 6th header</h5>
+<h6 style="color:purple;font-size:10px;">This is the 7th header with font size 10 px</h6>
+-->
+<p>This line will be written from <span class="note">right to left</span>:</p>
+<bdo dir="rtl">This line will be written from right to left</bdo>
+<p title="See the picture"><b>Do you   <em>see</em>    <small><mark>that</mark></small>     cool</b>     <del>shovel</del> <strong>tool</strong>?</p>
+<img src="images/lopata.jpg" alt="an image of a shovel" style="float:left; width=140px; height=142;">
+<img src="images/Jack.gif" alt="an image of Samurai Jack" style="float:right;"><br />
+ <button type="button" onclick="alert('Nothing happens, aah?')" title="Click me!">Click</button> <br><br>
+ <form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+    <option value="Other">
+  </datalist>
+  <input type="submit" value="choose your browser">
+</form>
+<p>Colors codes can be accessed <a href="https://www.w3schools.com/colors/">here</a></p> 
+ <p style="text-align:center;color:#800080;border:2px solid Violet;padding:10px;" title="choose you language"> <b>You <cite>can</cite> learn languages here:</b></p>
+ <ul style="color:red;" title="Kjor pa!">Norwegian (norsk):</ul>
+ <li><ol>
+ <li><a href="https://www.duolingo.com/" <img src="images/duolingo.img" alt="Duolingo logo" style="width:42px;height:42px;border:0;">Duolingo</a></li>
+ <li><a href="https://www.memrise.com/">Memrise</a></li>
+ <li><a href="https://naob.no"><abbr title="Det norske akademis ordbok">Naob</abbr></a></li>
+ </ol>
+ </li>
+ <ul style="color:green;" title="??">Chinese (??):</ul>
+  <li><ol>
+  <li><a href="https://www.duolingo.com/">Duolingo</a></li>
+   <li><a href="https://www.memrise.com/">Memrise</a></li>
+   <li><a href="http://www.daydayupchinese.com/index.htm">Daydayupchinese</a></li>
+ </ol>
+ </li>
+ <hr>
+ <div style="font-family:dejavu sans mono; font-size:90%; background-color:greenyellow; padding:10px">
+<p  title="click the link">To start <span style="color:red; font-weight:bold;">Duolingo</span> <br>click the button.</p></div>
+<blockquote><div class="buttons"><a href="https://www.duolingo.com">Duolingo</a></div></blockquote>
+<div style="font-family:dejavu sans mono; font-size:90%; text-align:left; background-color:greenyellow; padding:10px;">
+<p title="click the link">To start <span style="color:red; font-weight:bold;">Memrise</span> <br />click the button.</p></div>
+<blockquote><div class="buttons"><a href="https://www.memrise.com">Memrise</a></div></blockquote>
+<!--
+<a href="default.asp"> <img src="smiley.gif" alt="gif" style="width:42px;height:42px;border:0"> </a>
+-->
+</body>
+</html>
